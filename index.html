@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
-    <link rel="stylesheet" href="../output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -14,12 +13,30 @@
             <h1 class="text-2xl font-bold">
                 Greenden
             </h1>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 md:hidden  ">
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 md:hidden cursor-pointer ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
             <ul class=" gap-5 text-gray-600 font-medium hidden md:flex">
+                <li class="hover:underline underline-offset-4  hover:text-black">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="hover:underline underline-offset-4 hover:text-black">
+                    <a href="./product.html">Product</a>
+                </li>
+                <li class="hover:underline underline-offset-4 hover:text-black">
+                    <a href="./contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- side navbar -->
+
+        <section id="sidenav" class="bg-green-200 right-0 fixed z-20 felx flex-col top-0 transition-all duration-1000" style="width: 50% ; height: 100vh; right: -50%; ">
+            <div>
+                <h3 id="closed-1" class="font-bold right-0 p-4 cursor-pointer" >X</h3>
+            </div>
+            <ul class=" flex gap-5 text-gray-800 font-medium flex-col items-center pt-7  " >
                 <li class="hover:underline underline-offset-4 hover:text-black">
                     <a href="#">Home</a>
                 </li>
@@ -30,7 +47,7 @@
                     <a href="./contact.html">contact</a>
                 </li>
             </ul>
-        </nav>
+        </section>
         <!-- header section -->
         <section class="bg-green-200 px-4 py-4 md:p-10 flex justify-center items-center ">
             <div>
@@ -149,5 +166,6 @@
             <p class="py-10">&copy; 2021 Greendey.com</p>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
